@@ -85,6 +85,8 @@ if __name__ == '__main__':
             images = images.reshape(-1, 3, 64, 64).to(device)
             labels = labels.to(device)
 
+    
+
             # Forward pass
             outputs = model(images)
 
