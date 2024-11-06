@@ -128,4 +128,4 @@ if __name__ == '__main__':
         plt.xlabel('Epoch')
         plt.ylabel('Loss')
         plt.legend()
-        plt.savefig('/home/pi/ee347/lab-8-pytorch-and-deep-learning-2-group-17/task2_loss_plot.png')
+        plt.savefig('/home/pi/ee347/lab-8-pytorch-and-deep-learning-2-group-17/task3_loss_plot.png')
