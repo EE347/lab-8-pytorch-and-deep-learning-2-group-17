@@ -15,8 +15,8 @@ if __name__ == '__main__':
         device = torch.device('cpu')
 
     # Hyperparameters
-    learning_rate = 0.005 # Try adjusting this value (e.g., 0.0001, 0.005, 0.01)
-    batch_size = 16  # Try adjusting this value (e.g., 4, 8, 16, 32)
+    learning_rate = 0.005 
+    batch_size = 16 
 
     # Create the datasets and dataloaders with modified batch size
     trainset = TeamMateDataset(n_images=50, train=True)
@@ -33,7 +33,7 @@ if __name__ == '__main__':
     train_losses = []
     test_losses = []
 
-    for epoch in range(1, 100):
+    for epoch in range(1, 4):
         t = time.time_ns()
         model.train()
         train_loss = 0
