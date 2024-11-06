@@ -17,7 +17,7 @@ if __name__ == '__main__':
         device = torch.device('cpu')
 
     # Hyperparameters
-    learning_rate = 0.001  # Experiment with different values here
+    learning_rate = 0.005  # Experiment with different values here
     batch_size = 8  # Experiment with different values here
 
     # Create the datasets and dataloaders with modified batch size
@@ -50,6 +50,7 @@ if __name__ == '__main__':
             print(f"\nTraining with {loss_name}...\n")
             for epoch in range(1, 3):
                 t = time.time_ns()
+
                 model.train()
                 train_loss = 0
 
